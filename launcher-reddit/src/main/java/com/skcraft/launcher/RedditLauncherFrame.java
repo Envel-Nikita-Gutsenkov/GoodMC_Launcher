@@ -124,7 +124,7 @@ public class RedditLauncherFrame extends LauncherFrame {
         JLabel label = new JLabel();
         try {
             BufferedImage image = ImageIO.read(RedditLauncher.class.getResourceAsStream("/com/skcraft/launcher/header.png"));
-            int width = Math.min(image.getWidth(), 350);
+            int width = Math.min(image.getWidth(), 450);
             label.setIcon(new ImageIcon(image.getScaledInstance(width, -1, Image.SCALE_SMOOTH)));
             label.setHorizontalAlignment(Theme.headerAlignX);
         } catch (IOException e) {
