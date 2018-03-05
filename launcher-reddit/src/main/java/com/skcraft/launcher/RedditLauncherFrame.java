@@ -21,6 +21,8 @@ public class RedditLauncherFrame extends LauncherFrame {
 
     public RedditLauncherFrame(@NonNull final Launcher launcher) {
         super(launcher);
+        setPreferredSize(new Dimension(800, 500));
+        setLocationRelativeTo(null);
         setIcons();
     }
 
