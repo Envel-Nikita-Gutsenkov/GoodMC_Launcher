@@ -18,7 +18,6 @@ import java.util.logging.Level;
 public class RedditLauncher {
 
     public static void main(final String[] args) {
-
         Launcher.setupLogger();
 
         SwingUtilities.invokeLater(new Runnable() {
