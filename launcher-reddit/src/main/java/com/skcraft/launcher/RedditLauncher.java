@@ -8,7 +8,12 @@ package com.skcraft.launcher;
 
 import com.google.common.base.Supplier;
 import com.skcraft.launcher.swing.SwingHelper;
+import com.sun.jna.Native;
+import com.sun.jna.NativeLibrary;
 import lombok.extern.java.Log;
+import uk.co.caprica.vlcj.binding.LibVlc;
+import uk.co.caprica.vlcj.discovery.NativeDiscovery;
+import uk.co.caprica.vlcj.runtime.RuntimeUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +24,8 @@ public class RedditLauncher {
 
     public static void main(final String[] args) {
 
+        NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(), "launcher-reddit/lib");
+        //Native.loadLibrary(RuntimeUtil.getLibVlcLibraryName(), LibVlc.class);
         Launcher.setupLogger();
 
         SwingUtilities.invokeLater(new Runnable() {
