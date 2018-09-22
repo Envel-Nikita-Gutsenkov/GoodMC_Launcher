@@ -24,7 +24,7 @@ public class RedditLauncher {
 
     public static void main(final String[] args) {
 
-        NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(), "launcher-reddit/lib");
+        NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(), "launcher-reddit/src/main/resources/com/skcraft/launcher/lib");
         //Native.loadLibrary(RuntimeUtil.getLibVlcLibraryName(), LibVlc.class);
         Launcher.setupLogger();
 
