@@ -108,7 +108,7 @@ public class RedditLauncherFrame extends LauncherFrame {
         mediaPlayerComponent.getMediaPlayer().enableOverlay(true);
 
         mediaPlayer.setRepeat(true);
-        mediaPlayer.playMedia("launcher-reddit/src/main/resources/com/skcraft/launcher/video.mp4"); //change this when it's time for building?
+        mediaPlayer.playMedia("launcher-reddit/src/main/resources/com/skcraft/launcher/video.webm"); //change this when it's time for building?
 
         setIcons();
     }
